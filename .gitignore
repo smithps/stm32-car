@@ -4,3 +4,5 @@ linker.map
 sinus.layout
 *.hex
 *.bin
+.vs
+!.vs/launch.vs.json
