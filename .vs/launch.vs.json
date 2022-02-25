@@ -1,0 +1,37 @@
+{
+  "version": "0.2.1",
+  "defaults": {},
+  "configurations": [
+    {
+      "type": "cortex-debug",
+      "name": "Debug J-Link",
+      "project": "CMakeLists.txt",
+      "projectTarget": "car-stuff-output (EV-Source\\car-stuff-output)",
+      "comment": "Learn how to configure WSL debugging. For more info, see http://aka.ms/vslinuxdebug",
+      "debuggerConfiguration": "gdb",
+      "args": [],
+      "env": {},
+      "cwd": "${workspaceRoot}",
+      "executable": "${workspaceRoot}/BSP/SEGGER/K66FN2M0_emPower/Output/Debug/Start_emPower.elf",
+      "serverpath": "/opt/SEGGER/JLink/JLinkGDBServerCLExe",
+      "servertype": "jlink",
+      "device": "STM32F103",
+      "interface": "jtag",
+      "serialNumber": "",
+      "jlinkscript": "${workspaceRoot}/BSP/SEGGER/K66FN2M0_emPower/Setup/Kinetis_K66_Target.js",
+      "runToMain": true,
+      "armToolchainPath": "/usr/bin/",
+      "svdFile": "${workspaceRoot}/SVD/STM32F103.svd"
+    },
+    {
+      "type": "cppgdb",
+      "name": "car-stuff-output (EV-Source\\car-stuff-output)",
+      "project": "CMakeLists.txt",
+      "projectTarget": "car-stuff-output (EV-Source\\car-stuff-output)",
+      "comment": "Learn how to configure WSL debugging. For more info, see http://aka.ms/vslinuxdebug",
+      "debuggerConfiguration": "gdb",
+      "args": [],
+      "env": {}
+    }
+  ]
+}
